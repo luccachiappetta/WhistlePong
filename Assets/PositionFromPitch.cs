@@ -9,9 +9,6 @@ public class PositionFromPitch : MonoBehaviour
     [SerializeField] private Vector3 maxY;
     [SerializeField] private WhistleDetector detector;
 
-    [SerializeField] private float sensitivity;
-    [SerializeField] private float threshold;
-    
     void Update()
     {
         // Debug.Log(detector.pitchMap);

@@ -39,16 +39,15 @@ public class WhistleDetector : MonoBehaviour
     void Update()
     {
         AnalyzeSound();
-        // pitchMap = Remap(pitchValue, 400f, 0f, 1600f, 1f);
-        // pitchMap = Mathf.Clamp(pitchMap, 0f, 1f);
 
-        pitchMap = map01(pitchValue, 400f, 1300f);
-        // pitchMap = pitchValue / divisionFactor;
+        pitchMap = map01(pitchValue, 400f, 900f);
         // Debug.Log(pitchMap);
     }
     
     public void AnalyzeSound()
     {
+        //code adapted from 
+        
         source.GetOutputData(samples, 0);
 
         //get sound spectrum
